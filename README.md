@@ -30,11 +30,11 @@ This project is an **Airbnb clone** built using **Express**, **MongoDB**, and **
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/yourusername/airbnb-clone.git
+    git clone https://github.com/deshinenikarthik/Airbnb-Clone.git
     ```
 2. Install dependencies:
     ```bash
-    cd airbnb-clone
+    cd Airbnb-Clone
     npm install
     ```
 3. Start MongoDB locally (or use a cloud-based MongoDB instance).
