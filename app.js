@@ -16,7 +16,7 @@ const LocalStratergy=require("passport-local");
 app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "/views"));
 const methodOverride = require("method-override");
-const user = require("./models/user.js");
+// const user = require("./models/user.js");
 app.use(methodOverride("_method"));
 app.use(express.urlencoded({ extended: true }));
 app.engine("ejs", ejsMate);
@@ -41,6 +41,8 @@ passport.deserializeUser(User.deserializeUser());
 app.use((req,res,next)=>{
     res.locals.success=req.flash("success");
     res.locals.error=req.flash("error");
+    res.locals.currUser = req.user;
+    // console.log(req.user);
     next();
 })
 
